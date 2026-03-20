@@ -69,7 +69,7 @@ Model conversion is important to make the model more flexible and deployable acr
 * Test accuracy: 0.976
 * Test accuracy: 0.975
 * Confusion Matrix:
-  <img width="676" height="590" alt="image" src="https://github.com/user-attachments/assets/729336dc-e1cb-44e2-933a-9db758230fb9" />
+<img width="676" height="590" alt="image" src="https://github.com/user-attachments/assets/729336dc-e1cb-44e2-933a-9db758230fb9" />
 
 * Accuracy and Loss History Plot
 <img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/d788f202-6095-4d0f-ad7d-c88bc7205414" />
