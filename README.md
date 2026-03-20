@@ -4,7 +4,7 @@ This project focuses on classifying different types of vegetables using deep lea
 
 This project demonstrates an end-to-end pipeline, including data preprocessing, model development, evaluation, and inference.
 
-## ** 🛠️ Tech Stack**
+## **🛠️ Tech Stack**
 * Python
 * TensorFlow Keras
 * Numpy
