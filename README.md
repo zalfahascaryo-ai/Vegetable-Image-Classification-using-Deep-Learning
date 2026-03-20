@@ -77,9 +77,9 @@ Model conversion is important to make the model more flexible and deployable acr
   
 ### **Inference**
 The model was tested across all 15 classes. Out of these, only **8 classes were correctly predicted** during inference. Despite achieving high accuracy (above 95%) on the test dataset, the model shows weaker performance on real-world inference data. This discrepancy may be caused by:
-* **Data Distribution Gap: ** Training images often contain multiple objects in a single frame, while inference images typically contain only a single object.
+* **Data Distribution Gap:** Training images often contain multiple objects in a single frame, while inference images typically contain only a single object.
 
-* **Model Simplicity: ** The current model uses a basic CNN architecture, which may not be powerful enough to generalize well to more varied real-world inputs.
+* **Model Simplicity:** The current model uses a basic CNN architecture, which may not be powerful enough to generalize well to more varied real-world inputs.
 
 This indicates that while the model performs well on structured test data, further improvements are needed to enhance real-world robustness.
 
