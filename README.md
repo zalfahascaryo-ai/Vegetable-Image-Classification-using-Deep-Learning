@@ -22,15 +22,15 @@ This project demonstrates an end-to-end pipeline, including data preprocessing, 
 ### **2. Data Preprocessing**
 * **Split Data:** Although the dataset originally provides a `70:15:15` split, the data is re-split manually from the training set into `80:10:10` for better control
 * **Data Augmentation (Training Set):**
-  - Rescale = 1./255
-  - Rotation range = 15
-  - Width shift range = 0.2
-  - Height shift range = 0.3
-  - Zoom range = 0.3
-  - Brightness range = 0.7 - 1.3
-  - Shear range = 0.2
-  - Horizontal flip
-  - fill mode = nearest
+  - Rescale: Converts pixel values from 0–255 to 0–1 to stabilize the training process  
+  - Rotation range: Randomly rotates images within a specified angle range (−x° to +x°)
+  - Width shift range: Randomly shifts images horizontally  
+  - Height shift range: Randomly shifts images vertically
+  - Zoom range: Randomly zooms in and out of images
+  - Brightness range: Adjusts image brightness within a given range 
+  - Shear range: Applies a shear transformation, slightly distorting the image along an axis  
+  - Horizontal flip: Randomly flips images horizontally  
+  - fill mode: Defines how empty areas are filled after transformations (e.g., rotation or shifting) 
 
   This augmentation generates approximately 375 new images, resulting in a total of around `1575 training images`.
 * **Validation & Test Data:** Only rescaling (1./255) is applied to maintain data authenticity. Each class generates around 47 images, with a total of approximately `1547 images` for validation and testing.
@@ -84,5 +84,5 @@ The model was tested across all 15 classes. Out of these, only **8 classes were 
 This indicates that while the model performs well on structured test data, further improvements are needed to enhance real-world robustness.
 
 ## **🚀 Future Work**
-* Use transfer learning: This project uses a basic CNN to understand core concepts. Future work can apply pretrained models (e.g., ResNet, MobileNet) for better performance
-* Deployment: Build a web or mobile application to make the model usable in real-world scenarios, such as assisting users during grocery shopping
+* **Use transfer learning:** This project uses a basic CNN to understand core concepts. Future work can apply pretrained models (e.g., ResNet, MobileNet) for better performance
+* **Deployment:** Build a web or mobile application to make the model usable in real-world scenarios, such as assisting users during grocery shopping
